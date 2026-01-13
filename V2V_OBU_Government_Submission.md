@@ -1,11 +1,11 @@
 # VEHICLE-TO-VEHICLE COMMUNICATION SYSTEM
 ## Complete Technical Implementation and Deployment Proposal for India's National V2V Initiative
 
-**Submitted to:** Ministry of Road Transport & Highways, Government of India  
+**Submitted for:** Ministry of Road Transport & Highways, Government of India  
 **Project Title:** AI-Driven Onboard Unit (OBU) System for Real-Time V2V Communication and Collision Avoidance  
-**Submission Date:** January 14, 2026  
+**Date:** January 14, 2026  
 **Classification:** Technical Research Proposal (Academic-Industry Partnership)  
-**Prepared By:** Final-Year Engineering Student, Department of Computer Engineering  
+**Prepared By:** Omkar Deshmukh, Department of Computer Engineering  
 **Institution:** University of Mumbai  
 
 ---
@@ -1320,10 +1320,8 @@ The Ministry of Road Transport & Highways is requested to:
 
 **Document Classification:** Government Technical Proposal  
 **Submission Status:** Ready for Government of India Review  
-**Contact:** [Your Name] | [Your Institution] | [Email] | [Phone]
+**Contact:** Omkar Deshmukh | Mumbai University | omraje5990@gmail.com 
 
 ---
 
 **END OF PROPOSAL**
-
-This comprehensive 15,000+ word technical proposal is submission-ready for the Government of India's V2V implementation initiative.
