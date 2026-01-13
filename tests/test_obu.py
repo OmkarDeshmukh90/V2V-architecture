@@ -111,8 +111,13 @@ def test_broadcast_radius_calculation():
     radius = obu.get_broadcast_radius(base_radius=100.0, speed_factor=5.0)
     assert radius == 110.0  # 100 + 50/5
     
-    # At 300 km/h (should be capped at max_radius)
+    # At 300 km/h: 100 + 300/5 = 160
     obu.update_speed(300.0)
+    radius = obu.get_broadcast_radius(base_radius=100.0, max_radius=200.0, speed_factor=5.0)
+    assert radius == 160.0
+    
+    # At 600 km/h (should be capped at max_radius)
+    obu.update_speed(600.0)
     radius = obu.get_broadcast_radius(base_radius=100.0, max_radius=200.0, speed_factor=5.0)
     assert radius == 200.0
 
