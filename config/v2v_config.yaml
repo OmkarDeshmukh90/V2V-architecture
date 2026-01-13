@@ -1,0 +1,50 @@
+# V2V System Configuration
+
+# Communication settings
+communication:
+  # Base broadcast radius in meters
+  base_radius: 100.0
+  # Maximum broadcast radius in meters
+  max_radius: 500.0
+  # Speed threshold for radius calculation (km/h per meter increase)
+  speed_radius_factor: 5.0
+  # Broadcast frequency in Hz
+  broadcast_frequency: 10
+  # UDP port for V2V communication
+  udp_port: 5555
+  # Maximum message size in bytes
+  max_message_size: 1024
+
+# OBU (On-Board Unit) settings
+obu:
+  # Vehicle ID prefix
+  vehicle_id_prefix: "V2V"
+  # Update frequency for sensor data (Hz)
+  sensor_update_frequency: 20
+  # ADAS sensor types to collect
+  adas_sensors:
+    - radar
+    - lidar
+    - camera
+
+# Collision detection settings
+collision_detection:
+  # Time-to-collision threshold in seconds
+  ttc_threshold: 3.0
+  # Critical time-to-collision threshold in seconds
+  critical_ttc_threshold: 1.5
+  # Minimum safe distance in meters
+  min_safe_distance: 5.0
+  # Prediction time horizon in seconds
+  prediction_horizon: 5.0
+  # Risk assessment threshold (0-1)
+  risk_threshold: 0.7
+
+# System settings
+system:
+  # Enable debug logging
+  debug: false
+  # Log file path
+  log_file: "v2v_system.log"
+  # Performance monitoring interval in seconds
+  monitoring_interval: 1.0
