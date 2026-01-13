@@ -2,6 +2,7 @@
 Vehicle data models for V2V communication
 """
 import time
+import math
 from typing import Dict, Optional, Tuple
 from dataclasses import dataclass, field
 
@@ -76,7 +77,6 @@ class VehicleData:
     
     def calculate_velocity_components(self):
         """Calculate velocity components based on speed and heading"""
-        import math
         # Convert speed from km/h to m/s
         speed_ms = self.speed / 3.6
         # Convert heading to radians (0 degrees = North, clockwise)

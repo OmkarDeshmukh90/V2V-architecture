@@ -67,6 +67,8 @@ class V2VReceiver:
         # Create UDP socket
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # Bind to all interfaces ('') to receive V2V broadcasts from any network interface
+        # This is intentional for V2V communication where vehicles may be on different networks
         self.socket.bind(('', self.port))
         self.socket.settimeout(1.0)  # Non-blocking with timeout
         

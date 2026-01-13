@@ -8,7 +8,6 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[
-        "numpy>=1.24.0",
     ],
     python_requires=">=3.7",
     classifiers=[
